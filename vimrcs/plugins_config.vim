@@ -177,3 +177,9 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Coc.nvim (Autocompletion)
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
