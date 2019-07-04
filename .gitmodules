@@ -1,0 +1,6 @@
+[submodule "my_plugins/vim"]
+	path = my_plugins/vim
+	url = git@github.com:dracula/vim.git
+[submodule "my_plugins/coc.nvim"]
+	path = my_plugins/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
