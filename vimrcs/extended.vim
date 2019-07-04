@@ -28,8 +28,18 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
+
+" solarized options
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+
+" Dracula options
+let g:dracula_italic = 0
+
 set background=dark
-colorscheme peaksea
+colorscheme dracula
+" colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

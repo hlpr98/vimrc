@@ -110,6 +110,10 @@ set magic
 set showmatch 
 " How many tenths of a second to blink when matching brackets
 set mat=2
+" Show line numbers
+set number
+" Opaque Background 
+set termguicolors
 
 " No annoying sound on errors
 set noerrorbells
@@ -134,16 +138,12 @@ set foldcolumn=1
 syntax enable 
 
 " Enable 256 colors palette in Gnome Terminal
-" if $COLORTERM == 'gnome-terminal'
-    " set t_Co=256
-" endif
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
 
-try
-    " solarized options
-    let g:solarized_termcolors = 256
-    let g:solarized_visibility = "high"
-    let g:solarized_contrast = "high"
-    colorscheme solarized
+try    
+    colorscheme desert
 catch
 endtry
 
@@ -151,11 +151,11 @@ set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    " set guioptions-=T
-    " set guioptions-=e
-    " set t_Co=256
-    " set guitablabel=%M\ %t
-    set background=light    
+    set guioptions-=T
+    set guioptions-=e
+    set t_Co=256
+    set guitablabel=%M\ %t
+    " set background=light    
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
